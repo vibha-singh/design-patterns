@@ -1,0 +1,24 @@
+Take what varies and "encapsulate" it so it won't affect the res of your code and later you can alter or extend the parts that vary without affecting those that don't
+e.g: In the Duck example Fly and quack behaviours can vary based on duck to duck so we have encapsulated it separately
+
+Program to an interface, not an implementation
+     Program to an interface:
+     e.g: Duck d = new Duck();
+          d.swim();
+
+     Program to an interface:
+     e.g: Duck d = new MallardDuck();
+          d.display();
+
+In this we have below relationships:
+IS-A: Inheritance e.g: MallardDuck is a Duck that's why MallardDuck has inherited the property of duck
+HAS-A: Composition e.g: Duck has a FlyBehaviour as well as QuackBehaviour so that's why it is a field of Duck class
+IMPLEMENTS:
+
+Thumb Rule: Favour Composition over Inheritance
+Using composition gives more flexibility like now we can have more implementations of FlyBehaviour and QuackBehaviour which can be directly added to ne ducks if we are introducing
+
+Strategy Pattern: It defines a family of algorithms, encapsulates each one and makes them interchangeable. Strategy lets the algorithm vary independently from clients that use it
+
+
+

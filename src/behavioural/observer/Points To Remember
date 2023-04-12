@@ -1,0 +1,4 @@
+Use case: We have to create a broadcast channel.
+It keeps track of all the objects listening to it and anytime a new piece of data comes along it sends a message to each listener.
+What's cool is that the listeners can join broadcast at any time or they can even remove themselves.
+It is really dynamic and loosely coupled.
